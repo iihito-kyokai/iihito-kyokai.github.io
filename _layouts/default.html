@@ -1,0 +1,38 @@
+---
+---
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 | default: "jp" }}" class="no-js">
+	<head>
+		{% include head.html %}
+		{% include head/custom.html %}
+		<title>{{ page.title }}</title>
+	</head>
+	<body>
+		{% include_cached skip-links.html %}
+		{% include_cached browser-upgrade.html %}
+		{% include_cached masthead.html %}
+
+		{% include navigation.html %}
+		<div class="initial-content">
+			{{ content }}
+		</div>
+
+		{% if site.search == true %}
+      	<div class="search-content">
+        	{% include_cached search/search_form.html %}
+      	</div>
+    	{% endif %}
+
+		<div id="footer" class="page__footer">
+			<footer>
+				{% include footer/custom.html %}
+        		{% include_cached footer.html %}
+				<!-- start custom footer snippets -->
+
+				<!-- end custom footer snippets -->
+			</footer>
+		</div>
+		{% include scripts.html %}
+	</body>
+</html>
