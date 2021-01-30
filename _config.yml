@@ -19,7 +19,7 @@ title                    : "iihito-kyokai -HP"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "iihito-kyokai"
-description              : "ブログサイト"
+description              : "Blog site by iihito-kyokai"
 url                      : "https://iihito-kyokai.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "iihito-kyokai/iihito-kyokai.github.io"
